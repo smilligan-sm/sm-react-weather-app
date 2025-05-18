@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 import axios from"axios";
 
@@ -6,6 +7,7 @@ export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     function handleResponse(response) {
         console.log(response.data);
+        //remove upon deployment
         setWeatherData({
             ready: true,
             temperature: response.data.temperature.current,
@@ -15,7 +17,7 @@ export default function Weather(props) {
             condition: response.data.condition.description,
             feelsLike: response.data.temperature.feels_like,
             iconUrl: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
-            currentDate: "Monday 8:35 am"
+            currentDate: new Date(response.data.time * 1000)
         });
     }
 
@@ -35,7 +37,9 @@ export default function Weather(props) {
         </form>
         <h1>{weatherData.city}</h1>
         <ul>
-        <li>{weatherData.currentDate}</li>
+        <li>
+            <FormattedDate currentDate={weatherData.currentDate} />
+        </li>
         <li className="text-capitalize">{weatherData.condition}</li>
         </ul>
         <div className="row">
