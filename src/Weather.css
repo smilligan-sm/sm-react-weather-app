@@ -22,6 +22,20 @@
     margin: 0;
     padding: 0;
 }
+.Weather .btn {
+    background-color: #575156;
+    border: 1px solid #494549;
+    color: white;
+    font-weight: 700;
+}
+
+.Weather .btn:hover {
+    background-color: rgb(230, 114, 204);
+    border: 1px solid #494549;
+    color: white;
+    font-weight: 700;
+}
+
 .Weather li {
     font-size: 16px;
     font-weight: 100;
@@ -48,4 +62,23 @@
     line-height: 1;
     top: -34px;
     margin-left: 0px; 
+}
+
+.WeatherTemperature .unit a {
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+}
+
+.WeatherTemperature .unit a:hover {
+    text-decoration: underline;
+    color: rgb(230, 114, 204);
+    font-weight: bold;
+}
+
+.WeatherTemperature .unit .active {
+    font-weight: bold;
+    color: rgb(35, 33, 33);
+    cursor: default;
+    pointer-events: none;
+    text-decoration: underline;
 }
