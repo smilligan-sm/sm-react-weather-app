@@ -17,6 +17,10 @@ export default function Weather(props) {
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       icon: response.data.condition.icon,
+      country: response.data.country,
+      feelslike: Math.round(response.data.temperature.feels_like),
+      winddegree: response.data.wind.degree,
+      pressure: response.data.temperature.pressure,
     });
   }
 
@@ -37,7 +41,10 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div className="WeatherContainer">
+           
+        <div className="container">
+        <div className="WeatherSearch">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
@@ -56,9 +63,30 @@ export default function Weather(props) {
                 className="btn btn-primary w-100"
               />
             </div>
-          </div>
+            </div>
         </form>
-        <WeatherInfo data={weatherData} />
+        </div>
+        </div>  
+        
+            <div className="row">
+            <div className="col-7">
+            <div className="container-left">
+            <WeatherInfo data={weatherData} />
+            </div>
+            </div>
+             <div className="col-5">
+              <div className="container-right">
+                <div className="row">
+              <div className="WeatherForecast">
+                <h1>Forecast</h1>
+                </div>
+
+              </div>
+              </div>
+              </div>
+          </div>
+           
+
       </div>
     );
   } else {

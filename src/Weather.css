@@ -1,10 +1,69 @@
-.Weather {
+body {
+    background-color: #000000;
+}
+.WeatherContainer {
     font-family: arial, sans-serif;
     color: rgb(135, 135, 135);
     border: 1px solid black;
     padding: 16px;
-    margin: 30px auto;
+    margin: 10px auto;
     border-radius: 4px;
+    background-color: #4d4a4a;
+}
+.Weather {
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 16px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    Min-height: 300px;
+    background-color: #252323;
+}
+
+.WeatherSearch {
+    font-family: arial, sans-serif;
+    color: rgb(135, 135, 135);
+    background-color: #252323;
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+.WeatherForecast {
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+    Min-height: 300px;
+    background-color: #252323;
+}
+
+.row {
+    margin-right: auto;
+}
+.CityFact {
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #252323;
+    min-height: 150px;
+}
+.WeatherData {
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 16px 16px 0px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: #252323;
+    min-height: 150px;
 }
 
 .Weather form {
@@ -12,61 +71,110 @@
 }
 
 .Weather h1 {
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 15px 0 0 0;
+    line-height: 19px;
+}
+
+.Weather .date {
+    font-size: 12px;
     font-weight: 100;
+    text-align: right;
+    padding-right: 35px;
+    margin: 0px auto;
+}
+
+.WeatherForecast h1 {
+    font-size: 36px;
+    font-weight: 400;
     margin: 20px 0 0 0;
-    line-height: 29px;
+    line-height: 19px;
+    min-height: 420px;
 }
 
 .Weather ul {
     margin: 0;
     padding: 0;
 }
-.Weather .btn {
-    background-color: #575156;
-    border: 1px solid #494549;
-    color: white;
+.WeatherSearch .btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: black;
     font-weight: 700;
 }
 
-.Weather .btn:hover {
+.WeatherSearch .btn:hover {
     background-color: rgb(230, 114, 204);
     border: 1px solid #494549;
     color: white;
     font-weight: 700;
 }
 
-.Weather li {
-    font-size: 16px;
+
+.WeatherData p {
+    padding-top: 5px;
+    font-size: 14px;
     font-weight: 100;
-    line-height: 19px;
-    list-style: none;
+    line-height: 17px;
+    text-align: center;
 }
-.Weather img {
-    float: left;
-    margin-right: 10px;
-    width: 64px;
+
+.WeatherData .emoji {
+    padding-bottom: 5px;
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 17px;
+    text-align: center;
+}
+.WeatherIcon {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 .Weather .temperature {
-    font-weight: 600;
-    color: rgb(35, 33, 33);
-    font-size: 64px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
     line-height: 64px;
+    position: relative;
+    line-height: 1;
+    top: 34px;
+}
+
+.Weather p {
+    font-size: 10px;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.WeatherDescription p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.CurrentFeelsLike p {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.text-capitalize {
+    margin-bottom: 0px;
 }
 
 .Weather .unit {
     font-size: 16px;
-    color: rgb(35, 33, 33);
+    color: rgb(255, 255, 255);
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -34px;
+    top: 10px;
     margin-left: 0px; 
 }
 
 .WeatherTemperature .unit a {
     text-decoration: none;
-    color: rgb(135, 135, 135);
+    color: rgb(255, 255, 255);
 }
 
 .WeatherTemperature .unit a:hover {
@@ -77,8 +185,9 @@
 
 .WeatherTemperature .unit .active {
     font-weight: bold;
-    color: rgb(35, 33, 33);
+    color: rgb(230, 114, 204);
     cursor: default;
     pointer-events: none;
     text-decoration: underline;
 }
+
