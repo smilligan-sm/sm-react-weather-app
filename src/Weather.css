@@ -1,8 +1,11 @@
 body {
     background-color: #000000;
+    color: #ffffff;
+    font-family: arial, sans-serif;
+
 }
 .WeatherContainer {
-    font-family: arial, sans-serif;
+
     color: rgb(135, 135, 135);
     border: 1px solid black;
     padding: 16px;
@@ -11,19 +14,27 @@ body {
     background-color: #4d4a4a;
 }
 .Weather {
-    font-family: arial, sans-serif;
+
     color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 16px;
     margin: 10px auto;
     margin-bottom: 20px;
     border-radius: 4px;
-    Min-height: 300px;
+    Min-height: 260px;
     background-color: #252323;
 }
 
+.Weather-city {
+
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    margin: 10px auto;
+    background-color: #4d4a4a;
+}
+
 .WeatherSearch {
-    font-family: arial, sans-serif;
+
     color: rgb(135, 135, 135);
     background-color: #252323;
     padding: 16px;
@@ -31,14 +42,14 @@ body {
     border-radius: 4px;
 }
 .WeatherForecast {
-    font-family: arial, sans-serif;
+
     color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 16px;
     border-radius: 4px;
     margin-top: 10px;
     margin-right: 10px;
-    Min-height: 300px;
+    Min-height: 335px;
     background-color: #252323;
 }
 
@@ -46,7 +57,7 @@ body {
     margin-right: auto;
 }
 .CityFact {
-    font-family: arial, sans-serif;
+
     color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 16px;
@@ -56,7 +67,7 @@ body {
     min-height: 150px;
 }
 .WeatherData {
-    font-family: arial, sans-serif;
+
     color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 16px 16px 0px 16px;
@@ -77,14 +88,26 @@ body {
     line-height: 19px;
 }
 
-.Weather .date {
+.Weather-city h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 15px 0 7px 0;
+    line-height: 19px;
+}
+
+.Weather-city .date {
     font-size: 12px;
     font-weight: 100;
     text-align: right;
     padding-right: 35px;
-    margin: 0px auto;
 }
 
+.Weather-city p {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+}
 .WeatherForecast h1 {
     font-size: 36px;
     font-weight: 400;
@@ -93,24 +116,21 @@ body {
     min-height: 420px;
 }
 
-.Weather ul {
-    margin: 0;
-    padding: 0;
-}
+
+/*format search button*/
 .WeatherSearch .btn {
     background-color: #ffffff;
     border: 1px solid #000000;
     color: black;
     font-weight: 700;
 }
-
+/*format Search button when user hovers over it*/
 .WeatherSearch .btn:hover {
     background-color: rgb(230, 114, 204);
     border: 1px solid #494549;
     color: white;
     font-weight: 700;
 }
-
 
 .WeatherData p {
     padding-top: 5px;
@@ -119,7 +139,7 @@ body {
     line-height: 17px;
     text-align: center;
 }
-
+/*format the emojis displaying in the extra information section, which will be replaced with icons*/
 .WeatherData .emoji {
     padding-bottom: 5px;
     font-size: 34px;
@@ -127,19 +147,22 @@ body {
     line-height: 17px;
     text-align: center;
 }
+/* format the main weather icon for todays temperature*/
 .WeatherIcon {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
-.Weather .temperature {
+/*format the current temp value for todays temperature*/
+.WeatherTemperature .temperature {
     font-weight: 400;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 55px;
     line-height: 64px;
     position: relative;
     line-height: 1;
     top: 34px;
+    text-align: center;
 }
 
 .Weather p {
@@ -148,6 +171,7 @@ body {
     padding-top: 10px;
 }
 
+/*formatting for the weather description and feels like tmp for todays temperature*/
 .WeatherDescription p {
     font-size: 20px;
     padding-top: 15px;
@@ -161,8 +185,8 @@ body {
 .text-capitalize {
     margin-bottom: 0px;
 }
-
-.Weather .unit {
+/*formatting for the temperature units for todays current temperature*/
+.WeatherTemperature .unit {
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: 400;
@@ -171,18 +195,15 @@ body {
     top: 10px;
     margin-left: 0px; 
 }
-
 .WeatherTemperature .unit a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
 .WeatherTemperature .unit a:hover {
     text-decoration: underline;
     color: rgb(230, 114, 204);
     font-weight: bold;
 }
-
 .WeatherTemperature .unit .active {
     font-weight: bold;
     color: rgb(230, 114, 204);
