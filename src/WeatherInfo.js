@@ -14,9 +14,9 @@ export default function WeatherInfo(props) {
               <p><em>{props.data.country}</em></p>
             </div>
             <div className="col-6">
-              <p className="date">
+              <div className="date">
               <FormattedDate date={props.data.date} />
-            </p>
+              </div>
             </div>
             </div>
       </div>
@@ -27,15 +27,15 @@ export default function WeatherInfo(props) {
             </div>
             <div className="col-6">
               <div className="WeatherIcon">
-              <WeatherIcon code={props.data.icon} size={100} />
+              <WeatherIcon code={props.data.icon} size={130} />
               </div>
             </div>
       </div>
       <div className="WeatherDescription">
-        <p className="text-capitalize">{props.data.description}</p>
+        <div className="text-capitalize">{props.data.description}</div>
       </div>
       <div className="CurrentFeelsLike">
-        <p>Feels Like: {props.data.feelslike}°c</p>
+        <div>Feels Like: {props.data.feelslike}°c</div>
       </div>
       </div>
       
@@ -45,12 +45,12 @@ export default function WeatherInfo(props) {
         <div className="WeatherData">
           <div className="row">
             <div className="col-6">
-              <p><span className="emoji">🥵</span><br/> Humidity: {props.data.humidity}%</p>
-              <p><span className="emoji">🌡️</span><br/> Pressure: {props.data.pressure} (atm)</p>
+              <span><p className="emoji">🥵</p><br/> Humidity: {props.data.humidity}%</span>
+              <span><p className="emoji">🌡️</p><br/> Pressure: {props.data.pressure} (atm)</span>
             </div>
             <div className="col-6">
-              <p><span className="emoji">💨</span><br/> Wind: {props.data.wind} km/h</p>
-              <p><span className="emoji">↙️</span><br/> Wind Degree: {props.data.winddegree}°</p>
+              <span><p className="emoji">💨</p><br/> Wind: {props.data.wind} km/h</span>
+              <span><p className="emoji">↙️</p><br/> Wind Degree: {props.data.winddegree}°</span>
             </div>
       </div>
       </div>

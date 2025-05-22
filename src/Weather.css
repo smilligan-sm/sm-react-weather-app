@@ -1,8 +1,7 @@
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: arial, sans-serif;
-
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*main container holding all sub containers and background color*/
 .WeatherContainer {
@@ -12,6 +11,7 @@ body {
     margin: 10px auto;
     border-radius: 4px;
     background-color: #4d4a4a;
+    min-width: 600px;
 }
 .Weather {
     color: rgb(255, 255, 255);
@@ -55,16 +55,6 @@ body {
 .row {
     margin-right: auto;
 }
-.CityFact {
-
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    padding: 16px;
-    border-radius: 4px;
-    margin-top: 20px;
-    background-color: #252323;
-    min-height: 150px;
-}
 .WeatherData {
 
     color: rgb(255, 255, 255);
@@ -88,10 +78,10 @@ body {
 }
 
 .Weather-city h1 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 54px;
+    font-weight: 500;
     margin: 15px 0 7px 0;
-    line-height: 19px;
+    line-height: 30px;
 }
 
 .Weather-city .date {
@@ -153,15 +143,28 @@ body {
     text-align: center;
 }
 /*format the current temp value for todays temperature*/
+
+.WeatherTemperatureCurrent {
+    display: inline-block;
+}
 .WeatherTemperature .temperature {
     font-weight: 400;
     color: rgb(255, 255, 255);
-    font-size: 55px;
+    font-size: 65px;
     line-height: 64px;
     position: relative;
-    line-height: 1;
-    top: 34px;
-    text-align: center;
+    float:left;
+    text-align: left;
+}
+
+.WeatherTemperature .Unit {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 64px;
+    position: relative;
+    top: -20px;
+
 }
 
 .Weather p {
@@ -189,25 +192,10 @@ body {
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: 400;
-    position: relative;
+    vertical-align: text-top;
     line-height: 1;
-    top: 10px;
+    top: 4px;
     margin-left: 0px; 
 }
-.WeatherTemperature .unit a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.WeatherTemperature .unit a:hover {
-    text-decoration: underline;
-    color: rgb(230, 114, 204);
-    font-weight: bold;
-}
-.WeatherTemperature .unit .active {
-    font-weight: bold;
-    color: rgb(230, 114, 204);
-    cursor: default;
-    pointer-events: none;
-    text-decoration: underline;
-}
+
 
