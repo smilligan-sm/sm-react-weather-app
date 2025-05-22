@@ -19,6 +19,7 @@ export default function WeatherForecast(props) {
                 <div className="row">
                     <h2>Forecast</h2>
                 </div>
+                <div className="WeatherForecastResultsRows">
                 <div className="row">
                     <div className="col">
                         <div className="WeatherForecast-day"></div>   
@@ -27,16 +28,21 @@ export default function WeatherForecast(props) {
                         <div className="WeatherForecast-description"></div>   
                     </div>
                     <div className="col">
-                        <div className="WeatherForecast-icon"></div>
-                    </div>
-                    <div className="col">
                         <div className="WeatherForecast-temperatures">
                             <span className="WeatherForecast-temperatures-min">Min / </span>
                             <span className="WeatherForecast-temperatures-max">Max</span>
                         </div>
                     </div>
+                        {forecast.map(function(dailyForecast, index) {
+                            if (index > 0) {
+                                return (
+                                    <div><WeatherForecastDay data={dailyForecast} />
+                                    </div>
+                                );   
+                            }                                        
+                    })}
                 </div>
-                <WeatherForecastDay data={forecast[0]} />
+                </div>
             </div>
     );
     } else {
