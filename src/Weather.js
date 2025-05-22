@@ -79,7 +79,7 @@ export default function Weather(props) {
               <div className="container-right">
                 <div className="row">
               <div className="WeatherForecast">
-                <WeatherForecast />
+                <WeatherForecast city={weatherData.city} />
                 </div>
               </div>
               </div>
