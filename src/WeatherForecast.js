@@ -38,6 +38,9 @@ export default function WeatherForecast(props) {
                         <div className="WeatherForecast-description"></div>   
                     </div>
                     <div className="col">
+                        <div className="WeatherForecast-day"></div>   
+                    </div>
+                    <div className="col">
                         <div className="WeatherForecast-temperatures">
                             <span className="WeatherForecast-temperatures-min">Min / </span>
                             <span className="WeatherForecast-temperatures-max">Max</span>

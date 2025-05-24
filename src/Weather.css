@@ -11,28 +11,27 @@ body {
     margin: 10px auto;
     border-radius: 4px;
     background-color: #4d4a4a;
-    min-width: 600px;
+    min-width: 700px;
 }
+/*container for todays details*/
 .Weather {
     color: rgb(255, 255, 255);
     border: 1px solid black;
-    padding: 16px;
-    margin: 10px auto;
-    margin-bottom: 20px;
+    padding: 14px;
+    margin: 5px auto;
     border-radius: 4px;
-    Min-height: 260px;
+    Min-height: 292px;
     background-color: #252323;
 }
 /*container holding the city, country and date fields*/
 .Weather-city {
     color: rgb(255, 255, 255);
     padding-left: 5px;
-    margin: 10px auto;
+    margin: 2px 0px;
     background-color: #4d4a4a;
 }
 /*container holding the city search function*/
 .WeatherSearch {
-
     color: rgb(135, 135, 135);
     background-color: #252323;
     padding: 16px;
@@ -41,7 +40,6 @@ body {
 }
 /*container holding the weather forecast information*/
 .WeatherForecast {
-
     color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 16px;
@@ -50,62 +48,23 @@ body {
     margin-right: 10px;
     Min-height: 335px;
     background-color: #252323;
+    max-width: 295px;
 }
 
-.row {
-    margin-right: auto;
-}
-.WeatherData {
-
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    padding: 16px 16px 0px 16px;
-    border-radius: 4px;
-    margin-top: 10px;
-    background-color: #252323;
-    min-height: 150px;
-}
-
-.Weather form {
-    margin-bottom: 20px;
-}
-
-.Weather h1 {
-    font-size: 36px;
-    font-weight: 400;
-    margin: 15px 0 0 0;
-    line-height: 19px;
-}
-
+/*formats the city name*/
 .Weather-city h1 {
     font-size: 54px;
     font-weight: 500;
     margin: 15px 0 7px 0;
     line-height: 30px;
 }
-
+/*formats the current date*/
 .Weather-city .date {
     font-size: 12px;
     font-weight: 100;
     text-align: right;
     padding-right: 35px;
 }
-
-.Weather-city p {
-    font-size: 10px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    padding-top: 2px;
-}
-.WeatherForecast h1 {
-    font-size: 36px;
-    font-weight: 400;
-    margin: 20px 0 0 0;
-    line-height: 19px;
-    min-height: 420px;
-}
-
-
 /*format search button*/
 .WeatherSearch .btn {
     background-color: #ffffff;
@@ -121,21 +80,6 @@ body {
     font-weight: 700;
 }
 
-.WeatherData p {
-    padding-top: 5px;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 17px;
-    text-align: center;
-}
-/*format the emojis displaying in the extra information section, which will be replaced with icons*/
-.WeatherData .emoji {
-    padding-bottom: 5px;
-    font-size: 34px;
-    font-weight: 100;
-    line-height: 17px;
-    text-align: center;
-}
 /* format the main weather icon for todays temperature*/
 .WeatherIcon {
     display: inline-block;
@@ -143,51 +87,41 @@ body {
     text-align: center;
 }
 /*format the current temp value for todays temperature*/
-
 .WeatherTemperatureCurrent {
     display: inline-block;
 }
+/*formats todays temperature*/
 .WeatherTemperature .temperature {
     font-weight: 400;
     color: rgb(255, 255, 255);
-    font-size: 65px;
+    font-size: 94px;
     line-height: 64px;
     position: relative;
     float:left;
     text-align: left;
+    top: 20px;
 }
-
+/*formats the unit next to todays temperature*/
 .WeatherTemperature .Unit {
     font-weight: 400;
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 64px;
     position: relative;
-    top: -20px;
-
 }
-
-.Weather p {
-    font-size: 10px;
-    margin-left: 15px;
-    padding-top: 10px;
-}
-
-/*formatting for the weather description and feels like tmp for todays temperature*/
-.WeatherDescription p {
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-.CurrentFeelsLike p {
-    font-size: 20px;
-    padding-top: 0px;
+/*formatting of the extra details for todays weather, like humidity and wind speed*/
+.TodaysDetails {
+    font-size: 16px;
     margin-top: 0px;
+    line-height: 25px;
 }
-.text-capitalize {
+/*formatting for the description in todays temp area*/
+.Weather .text-capitalize {
+    font-size: 28px;
+    font-weight: 700;
     margin-bottom: 0px;
 }
-/*formatting for the temperature units for todays current temperature*/
+/*formatting for the temperature unit for todays current temperature*/
 .WeatherTemperature .unit {
     font-size: 16px;
     color: rgb(255, 255, 255);

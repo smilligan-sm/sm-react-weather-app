@@ -2,7 +2,8 @@
     text-align: center;
 }
 .WeatherForecastResultsRows .row {
-    border-bottom: #ffffff solid 1px;
+    border-top: #ffffff solid 1px;
+        line-height: 25px;
 }
 .WeatherForecast-data .col {
     padding: 2px;
@@ -23,4 +24,3 @@
     opacity: 0.8;
     margin-right: 4px;
 }
-

@@ -18,10 +18,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       icon: response.data.condition.icon,
-      country: response.data.country,
       feelslike: Math.round(response.data.temperature.feels_like),
-      winddegree: response.data.wind.degree,
-      pressure: response.data.temperature.pressure,
     });
   }
 
